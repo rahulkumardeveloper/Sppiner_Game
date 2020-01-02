@@ -1,0 +1,97 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600,700|Open+Sans:400,600,700&amp;display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' href='style.css'>
+	<link rel="icon" href="icon.png">
+
+    <title>Spinner Game</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Spinner Wheel <br> <span class="small">Fun game to play when you are bored</span></h1>
+
+        <div class="wrapper">
+
+            <div class="wheel leftBlock">
+                <!-- upperhalf -->
+                <div class="upperHalf">
+                    <div class="topLeftHalf leftBlock">
+                        <div class="slice leftBlock">
+                            <p class="content contentA">Most mischevous thing you ever did in school?</p>
+							<span class="line whiteA"></span>
+						</div>
+						
+                        <div class="slice rightBlock" id="sliceB">
+                            <p class="content contentB">What was your first crush name?</p>
+							<span class="line whiteB"></span>
+						</div>
+						
+                        <div class="clearFix"></div>
+                    </div>
+					
+                    <div class="topRightHalf rightBlock">
+                        <div class="slice leftBlock">
+                            <p class="content contentC">To how many people you have proposed so far?</p>
+                        </div>
+						
+                        <div class="slice rightBlock">
+                            <p class="content contentD">Which abusive word you say the most?</p>
+							<span class="line whiteD"></span>
+						</div>
+                        <div class="clearFix"></div>
+
+                    </div>
+                    <!-- <div class="clearFix"></div> -->
+                </div>
+                <!-- lower half -->
+                <div class="lowerHalf">
+                    <div class="topLeftHalf leftBlock">
+                        <div class="slice leftBlock">
+                            <p class="content contentE">Biggest revenge plan you ever made?</p> <span class="line whiteE"></span></div>
+                        <div class="slice rightBlock" id="sliceB">
+                            <p class="content contentF">who has hurted you the most?</p> <span class="line whiteB"></span></div>
+                        <div class="clearFix"></div>
+
+                    </div>
+                    <div class="topRightHalf rightBlock">
+                        <div class="slice leftBlock">
+                            <p class="content contentG">Biggest lie you ever told to your parents</p>
+
+                        </div>
+                        <div class="slice rightBlock">
+                          <p class="content contentH">
+						   Did you talk to your parent today?
+                          </p> <span class="line whiteF"></span></div>
+                        <div class="clearFix"></div>
+                    </div>
+
+                    <div class="designElements">
+                        <div class="line centerLine"></div>
+                    </div>
+                </div>
+                <div class="centerBall"></div>
+            </div>
+
+            <div class="pointer leftBlock">
+                <span class="triangle"></span> <span class="line pointerLine"></span>
+            </div>
+
+            <div class="gameOperations leftBlock">
+                <input type="button" class="btn" id="startSpin" value="Start" onclick="startSpinning()">
+                <input type="button" class="btn" value="Stop" id="stopSpin" onclick="stopSpinning()">
+            </div>
+            <span class="error"></span>
+            <div class="clearFix"></div>
+        </div>
+    </div>
+    <div class="pageContentWrapper"></div>
+    <footer>© Developed  by <a href="https://github.com/rahulkumardeveloper" target="_blank">Rahul Kumar</a></footer>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
